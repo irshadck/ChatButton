@@ -36,5 +36,11 @@
 })(jQuery);
 
 $(document).ready(function(e) {
-    $('#chatwithus-whatsapp').chatWithUsWhatsApp();
+    try {
+        setTimeout(function(e) {
+            $('#chatwithus-whatsapp').chatWithUsWhatsApp();
+        }, 2000);
+    } catch(e){
+        console.log(e);
+    }
 })
